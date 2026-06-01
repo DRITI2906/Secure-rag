@@ -1,0 +1,40 @@
+.venv/
+venv/
+.git/
+.gitignore
+.gitattributes
+.dockerignore
+Dockerfile
+
+# Caches and editor artifacts
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local secrets and dev-only files
+.env
+.env.*
+scripts/
+
+# Documentation / non-runtime
+tests/
+docs/
+infra/
+*.md
+LICENSE
+
+# Local-built artifacts (image rebuilds these)
+index/
+*.faiss
+*.index
+embeddings/
+logs/
+*.log

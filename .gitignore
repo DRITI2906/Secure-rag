@@ -1,0 +1,37 @@
+# --- Secrets & local config (NEVER commit) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+secrets/
+.azure/
+
+# --- Source documents & derived data (may contain PII; keep out of git) ---
+data/*
+!data/.gitkeep
+*.faiss
+*.index
+index/
+embeddings/
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
